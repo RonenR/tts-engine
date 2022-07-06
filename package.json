@@ -1,0 +1,16 @@
+{
+  "name": "tts-engine",
+  "version": "1.0.8",
+  "description": "Pure tts wrapper for the web-speech-api speech synthesis",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "build": "mkdir build; browserify browserify.js > build/bundle.js; terser build/bundle.js -c drop_console=true > build/bundle.min.js; git add .; npm version patch -m \"Release %s\" -f; git push;"
+  },
+  "author": "Ronen Rabinovici",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "locales": "file:../locales"
+  }
+}
