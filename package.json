@@ -1,6 +1,6 @@
 {
   "name": "tts-engine",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Pure tts wrapper for the web-speech-api speech synthesis",
   "main": "index.js",
   "scripts": {
