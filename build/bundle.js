@@ -550,21 +550,14 @@ exports.TtsEngine = {
             this._setBestMatchingVoice(null, null, this.DEFAULT_LANG);
         }
         //console.log('voice is: ', this.voice);
-        utterance.lang = "en-GB";
-        utterance.voiceURI = "Google UK English Female";//this.voice.voiceURI; // For a bug in Chrome on Android.
-        let voice;
-        for (const iVoice of this.voices) {
-            if (iVoice.voiceURI==utterance.voiceURI) {
-                voice = iVoice;
-            }
-        }
-        utterance.voice = voice;
-        utterance.rate = 1;//this.rate;
+        utterance.lang = this.voice.lang;
+        utterance.voiceURI = this.voice.voiceURI; // For a bug in Chrome on Android.
+        utterance.voice = this.voice;
+        utterance.rate = this.rate;
         let self = this;
 
         utterance.onstart = function (ev) {
-            console.log('start with: ', utterance);
-
+            //console.log('start');
             self._defaultOnStart(ev);
             if (self.listener && self.listener.onStart) {
                 self.listener.onStart();
