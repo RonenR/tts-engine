@@ -1,6 +1,6 @@
 {
   "name": "tts-engine",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Pure tts wrapper for the web-speech-api speech synthesis",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "author": "Ronen Rabinovici",
   "license": "UNLICENSED",
-  "private": true,
+  "private": false,
   "dependencies": {
     "locales": "file:../locales"
   }
