@@ -1,6 +1,6 @@
 {
-  "name": "ttsreader-engine",
-  "version": "1.0.12",
+  "name": "ttsreader",
+  "version": "1.0.13",
   "description": "Pure tts wrapper for the web-speech-api speech synthesis",
   "main": "index.js",
   "scripts": {
